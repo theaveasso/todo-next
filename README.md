@@ -15,7 +15,20 @@ then setup the database url in the `.env` file.
 // create a database in suparbase copy the dabase_url then to .env file
 DATABASE_URL="postgresql://postgres:password@db:5432/postgres"
 ```
-
+### How to start the project
+```
+pnpm i 
+// or 
+npm i 
+// or 
+yarn i
+```
+```
+// after config the DB url
+pnpm prisma db push
+// then 
+pnpm prisma studio // to see db table
+```
 
 Cheers!!🥂
 
