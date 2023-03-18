@@ -1,8 +1,38 @@
-# Full stack tutorial by Daniel Bark
-This tutorial creates an authenticated Todo app with TRPC, Next.js, Prisma, Tailwind.
-The app uses optimistic updates for all mutations.
-Auth is via magic link email.
+# my todo app 
+Sorry For you to look at this mess code
 
+To be honest with you I haven't been coding in react for quite sometime now, And this interview caught me in the very awkward situation. What I can do with this code is was only simple crud application with tons of bug. and Not meet some of the requirement. such (Filter, Hover to delete, I show it instead).
+
+You could run this app by
+Might need database to make this app work properly (postgres)
+- option 1: 
+```
+docker-compose up
+```
+then setup the database url in the `.env` file.
+- option 2 (which I used in this code
+```
+// create a database in suparbase copy the dabase_url then to .env file
+DATABASE_URL="postgresql://postgres:password@db:5432/postgres"
+```
+### How to start the project
+```
+pnpm i 
+// or 
+npm i 
+// or 
+yarn i
+```
+```
+// after config the DB url
+pnpm prisma db push
+// then 
+pnpm prisma studio // to see db table
+```
+
+Cheers!!🥂
+
+## Tech stack I used:
 # Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
