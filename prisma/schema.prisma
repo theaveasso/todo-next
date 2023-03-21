@@ -3,6 +3,7 @@
 
 generator client {
     provider = "prisma-client-js"
+    previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 datasource db {
@@ -13,6 +14,6 @@ datasource db {
 model Todo {
     id               String  @id @db.Uuid @default(dbgenerated("uuid_generate_v1()"))
     createdAt        DateTime @default(now())
-    todo             String
+    todo             String @db.Text
     isCompleted      Boolean  @default(false)
 }

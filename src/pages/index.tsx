@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Todos } from "../components/Todos";
 import { CreateTodo } from "../components/CreateTodo";
+import { SearchTodo } from "../components/SearchTodo";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
               className="flex flex-col gap-4 bg-white/10 p-8 text-white"
             >
               <h3 className="text-xl font-bold text-center">Another Todos App</h3>
+              <SearchTodo />
               <CreateTodo />
               <Todos />
             </div>

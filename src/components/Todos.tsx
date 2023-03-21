@@ -2,7 +2,7 @@ import { api } from "../utils/api";
 import { Todo } from "./Todo";
 import type { TodoOutput } from "../types";
 
-type TodoProps = {
+export type TodoProps = {
   id: string,
   todo: string,
   isCompleted: boolean,
