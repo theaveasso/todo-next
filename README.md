@@ -1,7 +1,7 @@
 # my todo app 
 Sorry For you to look at this mess code
 
-To be honest with you I haven't been coding in react for quite sometime now, And this interview caught me in the very awkward situation. What I can do with this code is was only simple crud application with tons of bug. and Not meet some of the requirement. such (Filter, Hover to delete, I show it instead).
+To be honest with you I haven't been coding in react for quite sometime now, And this interview caught me in the very awkward situation.
 
 You could run this app by
 Might need database to make this app work properly (postgres)
