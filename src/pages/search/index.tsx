@@ -24,11 +24,11 @@ function Search() {
               <h3 className="text-xl font-bold text-center">Another Todos App</h3>
               <SearchTodo />
               <>
-                {todos ?
+                {todos.length ?
                   todos.map((todo: TodoProps) => {
                     return <Todo key={todo.id} todoItem={todo} />
                   })
-                  : "Create your first todo..."}
+                  : <p className="text-yellow-300">"No result. Create a new one instead!"</p>}
               </>
             </div>
           </div>
